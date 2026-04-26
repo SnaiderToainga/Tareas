@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+ // Estructura Base
 struct Empleado {
     int codigo;
     string nombre;
