@@ -46,5 +46,5 @@ El sistema permite organizar los empleados de forma jerárquica y realizar búsq
 
 El uso de árboles binarios de búsqueda permite gestionar información de manera eficiente, facilitando operaciones como búsqueda, inserción y recorrido en estructuras de datos no lineales.
 
-Informe clic aqui ---> [ToaingaSnaider_ArbolBST.pdf](https://github.com/user-attachments/files/27146815/ToaingaSnaider_ArbolBST.pdf)
+Informe clic aqui ---> 
 
