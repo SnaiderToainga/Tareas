@@ -4,12 +4,14 @@
 #include <string>
 using namespace std;
 
+// Estructura que representa un empleado
 struct Empleado {
     int codigo;
     string nombre;
     string cargo;
 };
 
+// Nodo del árbol
 struct Nodo {
     Empleado dato;
     Nodo* izquierdo;
@@ -18,6 +20,7 @@ struct Nodo {
     Nodo(Empleado emp);
 };
 
+// Clase del árbol BST
 class ArbolBST {
 private:
     Nodo* raiz;

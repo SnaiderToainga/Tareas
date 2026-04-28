@@ -8,29 +8,70 @@ int main() {
     int op;
 
     do {
-        cout << "\n==== MENU BST EMPRESA ====\n";
-        cout << "1. Insertar\n2. Buscar\n3. Raiz\n4. Inorden\n5. Preorden\n6. Postorden\n7. Altura\n8. Hojas\n0. Salir\n";
+        cout << "\n===== SISTEMA BST EMPRESA =====\n";
+        cout << "1. Insertar empleado\n";
+        cout << "2. Buscar empleado\n";
+        cout << "3. Mostrar raiz\n";
+        cout << "4. Recorrido Inorden\n";
+        cout << "5. Recorrido Preorden\n";
+        cout << "6. Recorrido Postorden\n";
+        cout << "7. Mostrar altura\n";
+        cout << "8. Mostrar nodos hoja\n";
+        cout << "0. Salir\n";
+        cout << "Seleccione opcion: ";
+
         cin >> op;
 
-        if (op == 1) {
-            Empleado e;
-            cout << "Codigo: "; cin >> e.codigo;
-            cin.ignore();
-            cout << "Nombre: "; getline(cin, e.nombre);
-            cout << "Cargo: "; getline(cin, e.cargo);
-            arbol.insertarEmpleado(e);
+        switch (op) {
+            case 1: {
+                Empleado e;
+                cout << "Ingrese codigo: ";
+                cin >> e.codigo;
+                cin.ignore();
+
+                cout << "Ingrese nombre: ";
+                getline(cin, e.nombre);
+
+                cout << "Ingrese cargo: ";
+                getline(cin, e.cargo);
+
+                arbol.insertarEmpleado(e);
+                cout << "Empleado registrado correctamente.\n";
+                break;
+            }
+
+            case 2: {
+                int c;
+                cout << "Ingrese codigo a buscar: ";
+                cin >> c;
+                arbol.buscarEmpleado(c);
+                break;
+            }
+
+            case 3:
+                arbol.mostrarRaiz();
+                break;
+
+            case 4:
+                arbol.mostrarInorden();
+                break;
+
+            case 5:
+                arbol.mostrarPreorden();
+                break;
+
+            case 6:
+                arbol.mostrarPostorden();
+                break;
+
+            case 7:
+                arbol.mostrarAltura();
+                break;
+
+            case 8:
+                arbol.mostrarHojas();
+                break;
         }
-        else if (op == 2) {
-            int c;
-            cout << "Codigo: "; cin >> c;
-            arbol.buscarEmpleado(c);
-        }
-        else if (op == 3) arbol.mostrarRaiz();
-        else if (op == 4) arbol.mostrarInorden();
-        else if (op == 5) arbol.mostrarPreorden();
-        else if (op == 6) arbol.mostrarPostorden();
-        else if (op == 7) arbol.mostrarAltura();
-        else if (op == 8) arbol.mostrarHojas();
 
     } while (op != 0);
 
