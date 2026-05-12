@@ -1,7 +1,16 @@
 public class Ejercicio3_Binario2 {
     public static int calcularAltura(Nodo raiz) {
-        // TODO: Implementa tu lógica aquí
-        return 0;
+        // Caso base: árbol vacío tiene altura 0
+        if (raiz == null) {
+            return 0;
+        }
+        
+        // Calcular altura de los subárboles izquierdo y derecho
+        int alturaIzquierda = calcularAltura(raiz.izquierdo);
+        int alturaDerecha = calcularAltura(raiz.derecho);
+        
+        // La altura es 1 + la máxima altura entre los subárboles
+        return 1 + Math.max(alturaIzquierda, alturaDerecha);
     }
 
     public static void main(String[] args) {
@@ -20,4 +29,3 @@ public class Ejercicio3_Binario2 {
         System.out.println("Altura de árbol nulo (esperado 0): " + calcularAltura(null));
     }
 }
-// Nota: Usa la clase Nodo definida en el Ejercicio 2.
