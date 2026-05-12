@@ -1,5 +1,19 @@
 # Práctica de Estructuras de Datos: Árboles
 
+# Autor
+
+Toainga Toapanta Snaider Alexander
+
+## Descripción del Proyecto
+
+Este repositorio contiene la implementación de **5 ejercicios prácticos** sobre estructuras de datos tipo árbol, desarrollados en **C++** y **Java**. Los ejercicios abordan conceptos fundamentales como árboles N-arios, árboles binarios de búsqueda (BST), recorridos, transformaciones y métricas estructurales.
+
+# Informe 
+
+Click aqui -->
+
+# Práctica de Estructuras de Datos: Árboles
+
 El objetivo de este repositorio es proporcionarles un entorno práctico donde puedan aplicar los conceptos teóricos vistos en clase relacionados con árboles N-arios, árboles binarios, recorridos y transformaciones.
 
 ## Objetivos de Aprendizaje
