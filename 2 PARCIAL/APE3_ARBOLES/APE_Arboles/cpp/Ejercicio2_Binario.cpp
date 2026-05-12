@@ -9,7 +9,22 @@ struct Nodo {
 };
 
 Nodo* insertar(Nodo* raiz, int valor) {
-    // TODO: Implementa tu lógica aquí
+    // Caso base: si el árbol está vacío, crear nuevo nodo
+    if (raiz == nullptr) {
+        return new Nodo(valor);
+    }
+    
+    // Si el valor es menor, insertar en subárbol izquierdo
+    if (valor < raiz->valor) {
+        raiz->izquierdo = insertar(raiz->izquierdo, valor);
+    }
+    // Si el valor es mayor, insertar en subárbol derecho
+    else if (valor > raiz->valor) {
+        raiz->derecho = insertar(raiz->derecho, valor);
+    }
+    // Si es igual, normalmente no se inserta (valores únicos en BST)
+    // En este caso, simplemente no hacemos nada
+    
     return raiz;
 }
 
