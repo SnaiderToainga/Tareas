@@ -1,9 +1,17 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class  RecorridoInOrder {
+public class RecorridoInOrder {
     public static void inOrderAux(Nodo nodo, List<Integer> resultado) {
-        // TODO: Implementa tu lógica de recorrido aquí
+        // Caso base: si el nodo es nulo, retornar
+        if (nodo == null) {
+            return;
+        }
+        
+        // Recorrido In-Order: izquierdo -> raiz -> derecho
+        inOrderAux(nodo.izquierdo, resultado);  // Primero visitar subárbol izquierdo
+        resultado.add(nodo.valor);               // Luego el nodo actual
+        inOrderAux(nodo.derecho, resultado);     // Finalmente subárbol derecho
     }
 
     public static List<Integer> recorridoInOrder(Nodo raiz) {
