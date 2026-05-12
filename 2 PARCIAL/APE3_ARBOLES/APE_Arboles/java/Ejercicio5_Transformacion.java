@@ -30,7 +30,7 @@ public class Ejercicio5_Transformacion {
         System.out.println("Hijo Izq: " + raiz.izquierdo.valor + " | Hijo Der: " + raiz.derecho.valor);
         
         invertir(raiz);
-        
+        //
         System.out.println("\nDespués de invertir (Esperado: Izq 3 | Der 2):");
         String izq = (raiz.izquierdo != null) ? String.valueOf(raiz.izquierdo.valor) : "null";
         String der = (raiz.derecho != null) ? String.valueOf(raiz.derecho.valor) : "null";
