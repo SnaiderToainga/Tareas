@@ -10,7 +10,15 @@ struct Nodo {
 };
 
 void inOrderAux(Nodo* nodo, vector<int>& resultado) {
-    // TODO: Implementa tu logica de recorrido aqui
+    // Caso base: si el nodo es nulo, retornar
+    if (nodo == nullptr) {
+        return;
+    }
+    
+    // Recorrido In-Order: izquierdo -> raiz -> derecho
+    inOrderAux(nodo->izquierdo, resultado);  // Primero visitar subárbol izquierdo
+    resultado.push_back(nodo->valor);         // Luego el nodo actual
+    inOrderAux(nodo->derecho, resultado);     // Finalmente subárbol derecho
 }
 
 vector<int> recorridoInOrder(Nodo* raiz) {
