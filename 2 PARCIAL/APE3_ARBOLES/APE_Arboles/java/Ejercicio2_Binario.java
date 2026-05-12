@@ -6,8 +6,20 @@ class Nodo {
 
 public class Ejercicio2_Binario {
     public static Nodo insertar(Nodo raiz, int valor) {
-        // TODO: Implementa tu lógica aquí
-        // Recuerda: menores a la izquierda, mayores o iguales a la derecha.
+        // Caso base: si el árbol está vacío, crear nuevo nodo
+        if (raiz == null) {
+            return new Nodo(valor);
+        }
+        
+        // Si el valor es menor, insertar en subárbol izquierdo
+        if (valor < raiz.valor) {
+            raiz.izquierdo = insertar(raiz.izquierdo, valor);
+        }
+        // Si el valor es mayor o igual, insertar en subárbol derecho
+        else {
+            raiz.derecho = insertar(raiz.derecho, valor);
+        }
+        
         return raiz;
     }
 
