@@ -10,7 +10,8 @@ Este repositorio contiene la implementación de **5 ejercicios prácticos** sobr
 
 # Informe 
 
-Click aqui -->[Toainga_APE3Arboles.pdf](https://github.com/user-attachments/files/27662566/Toainga_APE3Arboles.pdf)
+Click aqui --> [Informe_GUIAAPE3Arboles.pdf](https://github.com/user-attachments/files/27709424/Informe_GUIAAPE3Arboles.pdf)
+
 
 
 # Práctica de Estructuras de Datos: Árboles
