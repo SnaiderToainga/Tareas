@@ -78,14 +78,15 @@ public class APE4_Grafos {
 
             // TODO:
             // Agregar nodo inicio al camino inicial
-
+            caminoInicial.add(inicio);
 
             // TODO:
             // Agregar caminoInicial a la cola
-
+            cola.add(caminoInicial);
 
             // TODO:
             // Marcar inicio como visitado
+            visitados.add(inicio);
 
 
             while (!cola.isEmpty()) {
