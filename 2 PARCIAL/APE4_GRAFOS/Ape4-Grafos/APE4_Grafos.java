@@ -155,19 +155,18 @@ public class APE4_Grafos {
 
             // Inicializar distancias
             for (String nodo : nodos.keySet()) {
-
                 // TODO:
                 // Inicializar distancia infinita
-
-
+                distancias.put(nodo, Integer.MAX_VALUE);
             }
 
             // TODO:
             // Distancia del inicio = 0
-
+            distancias.put(inicio, 0);
 
             // TODO:
             // Agregar inicio a la cola
+            cola.add(inicio);
 
 
             while (!cola.isEmpty()) {
