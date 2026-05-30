@@ -173,29 +173,36 @@ public class APE4_Grafos {
 
                 // TODO:
                 // Obtener nodo con menor distancia
+                String actual = cola.poll();
 
+                // Si ya llegamos al destino, podemos detener la búsqueda de distancias
+                if (actual.equals(fin)) break;
+
+                // Evitar procesar nulos o nodos sin adyacencias registradas
+                if (adyacencia.get(actual) == null) continue;
 
                 for (Arista arista : adyacencia.get(actual)) {
+                    String vecino = arista.destino;
 
                     // TODO:
                     // Calcular nueva distancia
-
+                    int nuevaDistancia = distancias.get(actual) + arista.peso;
 
                     // TODO:
                     // Verificar si nuevaDistancia es menor
-
+                    if (nuevaDistancia < distancias.get(vecino)) {
 
                         // TODO:
                         // Actualizar distancia
-
+                        distancias.put(vecino, nuevaDistancia);
 
                         // TODO:
                         // Guardar nodo anterior
-
+                        anteriores.put(vecino, actual);
 
                         // TODO:
                         // Agregar vecino a la cola
-
+                        cola.add(vecino);
                     }
                 }
             }
