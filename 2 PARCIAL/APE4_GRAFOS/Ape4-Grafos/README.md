@@ -13,7 +13,8 @@ Este repositorio contiene la implementación práctica de la **APE 4: Grafos**, 
 
 # Informe 
 
-Click aquí --> [ToaingaSnaider-APE04_Grafos.pdf](https://github.com/user-attachments/files/28427123/ToaingaSnaider-APE04_Grafos.pdf)<img width="991" height="135" alt="captura1" src="https://github.com/user-attachments/assets/b0c97f26-18d6-4399-b9b2-faa6eaf7ca37" />
+Click aquí --> [ToaingaSnaider-APE04_Grafos.pdf](https://github.com/user-attachments/files/28427193/ToaingaSnaider-APE04_Grafos.pdf)
+<img width="991" height="135" alt="captura1" src="https://github.com/user-attachments/assets/b0c97f26-18d6-4399-b9b2-faa6eaf7ca37" />
 
 Instrucciones para el Desarrollo
 Dentro del archivo APE4_Grafos.java se encuentra la estructura principal de las clases internas Nodo, Arista y Grafo.
