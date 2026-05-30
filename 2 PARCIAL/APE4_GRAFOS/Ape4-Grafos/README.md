@@ -3,7 +3,34 @@
 ## Estructura de Datos — Universidad Técnica de Ambato
 
 ---
+# Autor
 
+Toainga Toapanta Snaider Alexander
+
+## Descripción del Proyecto
+
+Este repositorio contiene la implementación práctica de la **APE 4: Grafos**, desarrollada en **Java**. El proyecto aborda el modelado de rutas físicas reales dentro del Campus Huachi de la Universidad Técnica de Ambato (UTA) utilizando listas de adyacencia, y realiza un análisis comparativo profundo entre los algoritmos fundamentales de trayectorias: Búsqueda en Anchura (BFS) y el algoritmo de Dijkstra.
+
+# Informe 
+
+Click aquí --> [ToaingaSnaider-APE04_Grafos.pdf](https://github.com/user-attachments/files/28427123/ToaingaSnaider-APE04_Grafos.pdf)<img width="991" height="135" alt="captura1" src="https://github.com/user-attachments/assets/b0c97f26-18d6-4399-b9b2-faa6eaf7ca37" />
+
+Instrucciones para el Desarrollo
+Dentro del archivo APE4_Grafos.java se encuentra la estructura principal de las clases internas Nodo, Arista y Grafo.
+
+Se localizaron y completaron estrictamente los métodos marcados con el bloque de comentario TODO:
+
+agregarNodo(): Inicialización de nodos y sus listas de adyacencia en memoria.
+
+agregarArista(): Enlace bidireccional para modelar un Grafo No Dirigido (caminos peatonales de doble vía).
+
+bfs(): Lógica de exploración radial por niveles para la ruta con menos paradas.
+
+dijkstra(): Lógica de relajación de aristas y colas de prioridad para la ruta con menor distancia en metros.
+
+No se modificó el método main, el cual ya incluye la topología de prueba del Campus Huachi de la UTA enlazando locaciones como FISEI, Idiomas, Biblioteca, Comedor y Estadio.
+
+---
 # Objetivo
 
 Implementar un grafo utilizando lista de adyacencia para representar rutas dentro del Campus Huachi de la UTA y comparar los algoritmos BFS y Dijkstra.
