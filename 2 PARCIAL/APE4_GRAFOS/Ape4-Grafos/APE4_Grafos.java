@@ -41,10 +41,10 @@ public class APE4_Grafos {
         // Agregar nodo al grafo
         // ═══════════════════════════════════
         public void agregarNodo(String id, String nombre) {
-
-            // COMPLETE AQUÍ
-
-
+            // Registra el nodo en el mapa principal utilizando su ID como clave
+            nodos.put(id, new Nodo(id, nombre));
+            // Inicializa la lista de adyacencia vacía para este nuevo nodo
+            adyacencia.put(id, new ArrayList<>());
         }
 
         // ═══════════════════════════════════
@@ -52,10 +52,13 @@ public class APE4_Grafos {
         // Agregar arista no dirigida
         // ═══════════════════════════════════
         public void agregarArista(String origen, String destino, int peso) {
-
-            // COMPLETE AQUÍ
-
-
+            // Verifica que ambos nodos existan antes de enlazarlos
+            if (adyacencia.containsKey(origen) && adyacencia.containsKey(destino)) {
+                // Conexión de ida: de origen a destino
+                adyacencia.get(origen).add(new Arista(destino, peso));
+                // Conexión de vuelta: de destino a origen (Grafo No Dirigido)
+                adyacencia.get(destino).add(new Arista(origen, peso));
+            }
         }
 
         // ═══════════════════════════════════
